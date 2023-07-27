@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <time-period></time-period>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import timePeriod from './views/timePeriodManage/index.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    timePeriod
+  },
+  data() {
+    return {
+    }
+  },
+  methods: {
   }
 }
 </script>

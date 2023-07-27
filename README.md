@@ -1,4 +1,4 @@
-# test
+# timeSplit
 
 ## Project setup
 ```
