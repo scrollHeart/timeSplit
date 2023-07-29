@@ -1,6 +1,7 @@
 <template>
     <div
         class="content time-period-content"
+        :style="{width: timePeriodWidth}"
     >
         <!-- 主体 -->
         <main
@@ -17,6 +18,7 @@
             >
                 <div
                     class="main"
+                    :class="{'no-edit': mode === 'default'}"
                     :style="{
                         width: widthList[index] + 'px',
                     }"
@@ -114,6 +116,10 @@ export default {
         noDragging: {
             type: Boolean,
             default: false,
+        },
+        timePeriodWidth: {
+            type: String,
+            default: '1200px',
         },
     },
     data() {
